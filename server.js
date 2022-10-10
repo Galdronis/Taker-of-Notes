@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 3001;
 const idgenerater = require('./idgenerater')
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-app.use(express.static('public'));
 const {savednotes} = require('./Develop/db/db.json');
 
 const writenote = (body, savednotesArray) => {
